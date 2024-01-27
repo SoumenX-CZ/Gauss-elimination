@@ -17,7 +17,8 @@ def gauss_elimination(a, b):
         x[i] = (b[i] - np.dot(a[i,i+1:], x[i+1:])) / a[i,i]
     return x
 
-# Testing data
+# Testování dat
+# Zadání xyz
 a = np.array([[2.0, 1.0, -1.0], [3.0, 2.0, 1.0], [2.0, -1.0, 2.0]])
 b = np.array([1.0, 10.0, 6.0])
 
